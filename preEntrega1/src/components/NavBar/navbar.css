@@ -1,0 +1,22 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: salmon;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar ul{
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+    align-items: center;
+    
+}
+.nav-item{
+    align-items: center;
+    justify-content: center;
+}
