@@ -1,21 +1,20 @@
 import React from "react"
-import './navbar.css'
-import CARTWIDGET from "../CartWidget/CartWidget"
+import CartWidget from "../CartWidget/CartWidget"
 
-const NAVBAR = () =>{
+const NavBar = () =>{
     return(
-        <nav className="navbar">
-            <a className="navbar-brand" href="#">Tienda</a>
-                <ul className="nav-list">
+        <nav className="navbar navbar-expand-lg bg-warning d-flex justify-content-around">
+            <a className="navbar-brand" href="#">TiendaCoder</a>
+                <ul className="navbar-nav">
                     <li className="nav-item"><a href="#" className="nav-link">Televisores</a></li>
                     <li className="nav-item"><a href="#" className="nav-link">Notebooks</a></li>
                     <li className="nav-item"><a href="#" className="nav-link">Celulares</a></li>
                 </ul>   
             <div>
-            <CARTWIDGET/>
+            <CartWidget/>
             </div>
         </nav>
     )
 }
 
-export default NAVBAR
+export default NavBar

@@ -1,9 +1,7 @@
-import './itemlistcontainer.css'
-
 const ItemListContainer = ({greeting}) => {
     return (
         <div className="item-list container">
-            <p className="item-text">{greeting}</p>
+            <h1 className="display-2 d-flex justify-content-center align-items-center">{greeting}</h1>
         </div>
     )
 }

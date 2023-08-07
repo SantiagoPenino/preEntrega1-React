@@ -1,14 +1,13 @@
 import { Icon } from '@iconify/react';
-import './cartwidget.css'
 
-const CART_ITEMS = 3;
-const CART_WIDGET = () => {
+const CartItems = 3;
+const CartWidget = () => {
     return(
         <>
-        <Icon className='cart-icon' icon="raphael:cart" />
-        {CART_ITEMS}
+        <Icon className='cart-icon display-6' icon="raphael:cart" />
+        {CartItems}
         </>
     )
 }
 
-export default CART_WIDGET
+export default CartWidget
