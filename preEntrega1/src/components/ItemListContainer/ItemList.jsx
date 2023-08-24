@@ -1,9 +1,25 @@
-import React from 'react'
+import React from "react";
+import propTypes from "prop-types";
 
-const ItemList = () => {
+const ItemList = ({ items }) => {
   return (
-    <div>ItemList</div>
-  )
-}
+    <div>
+      <h1>ItemList</h1>
+      <ul>
+        {items.map((item) => (
+          <li key={item.id}>
+            <h3>{item.name}</h3>
+            <p>${item.price}</p>
+            <p>{item.category}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-export default ItemList
+ItemList.propTypes = {
+  items: propTypes.array.isRequired,
+};
+
+export default ItemList;
